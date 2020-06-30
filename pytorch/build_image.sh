@@ -1,5 +1,5 @@
-NVC_TAG=20.03
-NERSC_TAG="ngc_${NVC_TAG}_v0"
+NVC_TAG=20.06
+NERSC_TAG="ngc-${NVC_TAG}-v0"
 
 if [ ! -d nersc-tensorboard-helper ]; then
   git clone git@github.com:NERSC/nersc-tensorboard-helper.git

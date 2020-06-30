@@ -3,7 +3,7 @@ FROM nvcr.io/nvidia/pytorch:$nvc_tag
 
 #install other python stuff necessary
 RUN apt-get update && apt-get install -y rsync && \
-    pip install ruamel.yaml pyyaml cmake \
+    pip install ruamel.yaml pyyaml PyYaml cmake \
     ipympl jupyter-server-proxy pillow \
     requests tabulate ray ray[tune] ray[rllib] tensorboardX
 
