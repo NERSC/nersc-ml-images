@@ -1,4 +1,4 @@
-NVC_TAG=20.03-tf1
+NVC_TAG=20.08-tf1
 NERSC_TAG="ngc-${NVC_TAG}-v0"
 
 if [ ! -d nersc-tensorboard-helper ]; then
