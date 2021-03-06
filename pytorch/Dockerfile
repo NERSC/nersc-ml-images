@@ -9,4 +9,4 @@ RUN apt-get update && apt-get install -y rsync && \
     pip install ruamel.yaml --ignore-installed
 
 # NERSC TensorBoard Jupyter helper
-COPY nersc-tensorboard-helper/nersc_tensorboard_helper.py /opt/conda/lib/python3.6/site-packages
+COPY nersc-tensorboard-helper/nersc_tensorboard_helper.py /opt/conda/lib/python3.8/site-packages
