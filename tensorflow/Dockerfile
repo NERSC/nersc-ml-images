@@ -1,6 +1,9 @@
 ARG nvc_tag
 FROM nvcr.io/nvidia/tensorflow:$nvc_tag
 
+RUN python -m pip install --no-cache-dir -U pip
+RUN apt-get update && apt-get install -y rsync
+
 RUN pip install --no-cache-dir \
     ruamel.yaml pyyaml pillow matplotlib \
     jupyter-server-proxy wandb \
