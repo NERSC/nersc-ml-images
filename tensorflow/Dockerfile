@@ -6,6 +6,6 @@ RUN apt-get update && apt-get install -y rsync
 
 RUN pip install --no-cache-dir \
     ruamel.yaml pyyaml pillow matplotlib \
-    jupyter-server-proxy wandb \
+    jupyter-server-proxy wandb pandas \
     requests tabulate ray ray[tune] ray[rllib] \
     git+https://github.com/NERSC/nersc-tensorboard-helper.git
