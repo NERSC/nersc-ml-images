@@ -13,7 +13,7 @@ RUN wget https://github.com/HDFGroup/hdf5/archive/refs/tags/hdf5-1_12_1.tar.gz &
     make install && \
     rm -rf hdf5-hdf5-1_12_1
 
-#use pip to install and build h5py on top of parallel hdf5
+# use pip to install and build h5py on top of parallel hdf5
 RUN HDF5_MPI=ON CC=mpicc HDF5_DIR=/opt/bin/hdf5 pip install --no-deps --no-binary=h5py h5py
 
 
@@ -21,5 +21,5 @@ RUN HDF5_MPI=ON CC=mpicc HDF5_DIR=/opt/bin/hdf5 pip install --no-deps --no-binar
 RUN pip install --no-cache-dir \
     ruamel.yaml pyyaml cmake ipympl pillow wandb torchsummary pandas \
     jupyter-server-proxy requests tabulate ray ray[tune] ray[rllib] h5py \
-    opencv-python-headless scikit-image mpi4py\
+    opencv-python-headless scikit-image mpi4py deepspeed \
     git+https://github.com/NERSC/nersc-tensorboard-helper.git
