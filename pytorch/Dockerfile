@@ -22,4 +22,5 @@ RUN pip install --no-cache-dir \
     ruamel.yaml pyyaml cmake ipympl pillow wandb torchsummary pandas \
     jupyter-server-proxy requests tabulate ray ray[tune] ray[rllib] h5py \
     opencv-python-headless scikit-image mpi4py deepspeed einops \
+    pytorch-lightning ray_lightning \
     git+https://github.com/NERSC/nersc-tensorboard-helper.git
