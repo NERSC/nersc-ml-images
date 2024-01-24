@@ -22,3 +22,9 @@ RUN pip install --no-cache-dir \
     jupyter-server-proxy requests tabulate ray ray[tune] ray[rllib] \
     scikit-image mpi4py deepspeed einops lightning \
     git+https://github.com/NERSC/nersc-tensorboard-helper.git
+
+# Install PyG
+RUN FORCE_CUDA=1 \
+    TORCH_CUDA_ARCH_LIST="8.0" \
+    CPATH=/usr/local/cuda/include \
+    pip install --no-cache-dir git+https://github.com/pyg-team/pyg-lib.git torch_scatter torch_sparse torch_cluster torch-geometric
