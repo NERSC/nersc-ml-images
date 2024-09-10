@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y rsync strace
 ARG num_build_workers=32
 
 # Install parallel HDF5
-ARG hdf5_version=hdf5_1.14.4.3
+ARG hdf5_version=hdf5-1_12_3
 RUN wget https://github.com/HDFGroup/hdf5/archive/refs/tags/${hdf5_version}.tar.gz && \
     tar -xvf ${hdf5_version}.tar.gz && \
     cd hdf5-${hdf5_version} && \
