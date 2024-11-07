@@ -26,7 +26,7 @@ RUN pip install --no-cache-dir \
     ruamel.yaml pyyaml cmake ipympl pillow wandb torchsummary pandas \
     jupyter-server-proxy requests tabulate ray ray[tune] ray[rllib] \
     scikit-image mpi4py deepspeed einops lightning \
-    accelerate datasets evaluate transformers \
+    accelerate datasets evaluate transformers parameterized \
     git+https://github.com/NERSC/nersc-tensorboard-helper.git
 
 # Install PyG
